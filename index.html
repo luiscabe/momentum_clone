@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Momentum</title>
+  <link rel="stylesheet" href="css/style.css"/>  <!-- CSS 파일 링크 -->
+</head>
+<body>
+<main>
+  <div class="top">
+    <div class="header">
+      <div class="header__column" id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header__column" >
+        <span id="clock">00:00:00</span>
+      </div>
+      <div class="header__column" >
+      </div>
+    </div>
+    <form id="login-form" class="hidden">  <!-- form tag 의 경우 browser 는 내부에서 submit 발생하면 새로고침을 자동 수행함 -->
+      <input required maxlength="15" type="text" placeholder="What is your name?"/>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+  </div>
+  <div class="middle">
+    <div>
+      <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter"/>
+      </form>
+    </div>
+    <div>
+      <ul id="todo-list">
+      </ul>
+    </div>
+  </div>
+  <div class="bottom">
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</main>
+<script src="js/greetings.js"></script>  <!-- JS 파일 링크 -->
+<script src="js/clock.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/background.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/weather.js"></script>
+</body>
+</html>
